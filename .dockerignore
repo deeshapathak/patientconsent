@@ -1,0 +1,5 @@
+# Prevent Render from detecting this as a Docker project
+node_modules
+.next
+.git
+.env*
