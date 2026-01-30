@@ -1,7 +1,7 @@
 services:
   - type: web
     name: patientconsent
-    runtime: node
+    env: node
     plan: starter
     buildCommand: npm install && npm run build
     startCommand: npm start
@@ -12,3 +12,4 @@ services:
         sync: false  # Set this in Render dashboard
     healthCheckPath: /
     autoDeploy: true
+    dockerfilePath: ""  # Explicitly disable Docker
